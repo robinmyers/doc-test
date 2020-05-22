@@ -2,4 +2,6 @@
 layout: default
 ---
 
-### Welcome
+# Welcome to my blog
+
+Some test content
