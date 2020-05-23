@@ -12,5 +12,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 {% for dir in dirs %}
   {% assign tool = dir | split:"/" %}
+  {% if tool %}
   * {{ tool }}
+  {% endif %}
 {% endfor %}
