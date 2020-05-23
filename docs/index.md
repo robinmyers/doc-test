@@ -8,8 +8,10 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-{% for page in site.pages %}
-* {{ page.dir }}
+| Path | File |
+|------|------|
+{% for file in site.static_files %}
+* | {{ file.path }} | {{ page.dir }} |
 {% endfor %}
 
 #### Pages
