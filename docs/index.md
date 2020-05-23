@@ -11,5 +11,5 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 {% assign tools = site.static_files | where "extname", ".md" %}
 
 {% for tool in tools %}
-* tool.path 
+* {{ tool.basename }}
 {% endfor %}
