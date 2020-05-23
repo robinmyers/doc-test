@@ -8,6 +8,6 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Pages
 
-{% for page in site.static_pages %}
+{% for page in site.static_files %}
 * {{ page.name }}
 {% endfor %}
