@@ -10,7 +10,8 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 | Path | File |
 |------|------|
-{% for file in site.static_files %}
+
+{% for file in site.static_files | where "extname", ".md" %}
 | {{ file.path }} | {{ file.name }} |
 {% endfor %}
 
