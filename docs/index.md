@@ -8,15 +8,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-{% assign tools = site.static_files | where:"extname",".md" | map:"path" | split:"/" %}
-
-{% for tool in tools %}
-* {{ tool }}
-{% endfor %}
-
-#### Test2
-
-{% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | remove:"/" %}
+{% assign dirs = site.pages | map:"dir" | remove:"/" %}
 
 {% for dir in dirs %}
 * {{ dir }}
