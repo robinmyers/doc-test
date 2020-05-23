@@ -8,7 +8,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-{% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | remove:"/" | first %}
+{% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | split:"/" | first %}
 
 {% for dir in dirs %}
 * {{ dir }}
