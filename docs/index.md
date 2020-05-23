@@ -8,12 +8,12 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-{% for page in site.static_files %}
+{% for page in site.pages %}
 * {{ page.dir }}
 {% endfor %}
 
 #### Pages
 
-{% for page in site.static_files %}
+{% for page in site.pages %}
 * {{ page.name }}
 {% endfor %}
