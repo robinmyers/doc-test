@@ -8,7 +8,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-{% assign tools = site.static_files %}
+{% assign tools = site.static_files | where:"extname",".md" %}
 
 {% for tool in tools %}
 * {{ tool.extname }}
