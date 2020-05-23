@@ -16,7 +16,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Test2
 
-{% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | uniq %}
+{% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | uniq | remove:"/" %}
 
 {% for dir in dirs %}
 * {{ dir }}
