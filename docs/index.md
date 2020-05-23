@@ -8,15 +8,6 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 #### Directories
 
-| Path | File |
-|------|------|
-
 {% for file in site.static_files | where "extname", ".md" %}
-| {{ file.path }} | {{ file.name }} |
-{% endfor %}
-
-#### Pages
-
-{% for page in site.pages %}
-* {{ page.name }}
+* {{ file.path }} 
 {% endfor %}
