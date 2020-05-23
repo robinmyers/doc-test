@@ -12,6 +12,6 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 
 {% for dir in dirs %}
   {% if dir != '/' %}
-  * {{ dir }}
+  * {{ dir | split:"/" }}
   {% endif %}
 {% endfor %}
