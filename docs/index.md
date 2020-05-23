@@ -9,7 +9,7 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 #### Directories
 
 {% for page in site.static_files %}
-* page.dir
+* {{ page.dir }}
 {% endfor %}
 
 #### Pages
