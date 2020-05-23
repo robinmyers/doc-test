@@ -11,7 +11,6 @@ Welcome to the documentation site. Contact the maintainers at: [{{ site.author }
 {% assign dirs = site.pages | where_exp:"item","item.path contains '.md'" | map:"dir" | uniq %}
 
 {% for dir in dirs %}
-  {% if dir != blank %}
-    * {{ dir | split:"/" }}
-  {% endif %}
+  {% assign tool = dir | split:"/" %}
+  * tool
 {% endfor %}
