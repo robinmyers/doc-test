@@ -2,10 +2,12 @@
 layout: default
 ---
 
-# Welcome to my blog
+### Documentation
 
-Some test content
+Welcome to the documentation site. Contact the maintainers at: [{{ site.author }}]({{ site.email }})
 
-The title of this page is: {{ page.title }}
+#### Pages
 
-The name of this page is: {{ page.name }}
+{% for page in site.static_pages %}
+* {{ page.name }}
+{% endfor %}
